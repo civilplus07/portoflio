@@ -9,17 +9,14 @@ export default function AppLayoutView() {
     const { setShow, show, variants, items, children } = useAppLayoutContext();
     return (
         <Flex direction={'column'}>
-            <Flex direction={'column'}>
+            <Flex direction={'column'} position='sticky' top={'0'} zIndex={99}>
                 <Flex
-                    top={'0%'}
                     bgColor='white'
-                    position={'sticky'}
                     h='100px'
                     borderBottom={'3px solid #cc372d'}
                     alignItems={'center'}
                     justifyContent='end'
                     fontSize={{ base: '5pt', sm: '5pt', md: '6pt', lg: '6pt', xl: '8pt' }}
-                    zIndex={99}
                 >
                     <Flex
                         mx={'20px'}

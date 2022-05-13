@@ -7,7 +7,7 @@ export default function HomeView() {
     const { count } = useHomeContext();
     return (
         <>
-            <ArchitectureBox />
+        <ArchitectureBox/>
         </>
     );
 }    
