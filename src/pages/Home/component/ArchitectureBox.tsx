@@ -18,6 +18,7 @@ export default function ArchitectureBox() {
             >
                 <Flex
                     fontSize={{ base: '15pt', sm: '20pt', md: '25pt', lg: '32pt' }}
+                    fontWeight='bold'
                 >
                     REVIT ARCHITECTURE<br /> SOFTWARE
                 </Flex>
