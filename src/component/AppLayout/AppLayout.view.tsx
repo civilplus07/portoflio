@@ -14,17 +14,23 @@ export default function AppLayoutView() {
                     top={'0%'}
                     bgColor='white'
                     position={'sticky'}
-                    h='120px'
-                    borderBottom={'3px solid #04c2c9'}
+                    h='100px'
+                    borderBottom={'3px solid #cc372d'}
                     alignItems={'center'}
-                    justifyContent='center'
-                    fontSize={{ base: '5pt', sm: '5pt', md: '6pt', lg: '8pt' }}
-                    lineHeight={{ base: '10pt', sm: '20pt', md: '30pt', lg: '40px' }}
+                    justifyContent='end'
+                    fontSize={{ base: '5pt', sm: '5pt', md: '6pt', lg: '6pt', xl: '8pt' }}
                     zIndex={99}
                 >
-                    <Flex display={{ base: 'none', sm: 'inherit' }}>
+                    <Flex
+                        mx={'20px'}
+                        w='200px'
+                        fontSize={{ base: '12pt', sm: '14pt', md: '16pt', lg: '18pt', xl: '20pt' }}
+                    >
+                        Civil <span style={{color:'#cc372d'}}>PLUS</span>
+                    </Flex>
+                    <Flex display={{ base: 'none', lg: 'inherit' }}>
                         {items.map((item, id) => (
-                            <Flex key={id} color={item.active ? '#e31b6d' : 'black'} p='0 20px' cursor={'pointer'} borderLeft={id == 0 ? "none" : '1px solid'}>
+                            <Flex fontWeight={'bold'} key={id} color={item.active ? '#e31b6d' : 'black'} p='0 20px' cursor={'pointer'} borderLeft={id == 0 ? "none" : '1px solid'}>
                                 <a href={item.href}>{(item.title + "").toUpperCase()}</a>
                             </Flex>
                         ))}
@@ -34,7 +40,7 @@ export default function AppLayoutView() {
                         w='100%'
                         m='0 20px'
                         justifyContent={'end'}
-                        display={{ base: 'inherit', sm: 'none' }}
+                        display={{ base: 'inherit', lg: 'none' }}
                         cursor='pointer'
                         onClick={() => setShow(!show)}
                     >
@@ -49,7 +55,7 @@ export default function AppLayoutView() {
                         position='absolute'
                         fontSize={'12pt'}
                         lineHeight={'11pt'}
-                        top='121px'
+                        top='101px'
                         bgColor={'#333'}
                         animate={show ? "open" : "closed"}
                         variants={variants}
