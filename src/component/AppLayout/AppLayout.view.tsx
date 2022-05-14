@@ -61,6 +61,7 @@ export default function AppLayoutView() {
                         bgColor={'#333'}
                         animate={show ? "open" : "closed"}
                         variants={variants}
+                        zIndex={99}
                     >
                         {items.map((item, id) => (
                             <Flex key={id} color={item.active ? '#e31b6d' : 'white'} m='20px 20px' cursor={'pointer'} onClick={() => setShow(false)}>

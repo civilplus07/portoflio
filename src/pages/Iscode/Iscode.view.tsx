@@ -17,29 +17,41 @@ export default function IscodeView() {
                 direction={'column'}
             >
                 <Flex
-                    justifyContent={'center'}
-                    direction='column'
-                    gap='10px'
-                    mb='50px'
+                    color={'white'}
+                    direction={{ base: 'column', lg: 'initial' }}
+                    columnGap={'10px'}
+                    rowGap='50px'
+                    mb={'50px'}
                 >
                     <Flex
-                        fontSize={{ base: '15pt', sm: '20pt', md: '25pt', lg: '32pt' }}
-                        fontWeight='bold'
+                        w={{ base: '100%', lg: '60%' }}
+                        justifyContent={'center'}
+                        direction='column'
+                        gap='10px'
                     >
-                        {Iscode_about.header}
+                        <Flex
+                            fontSize={{ base: '15pt', sm: '20pt', md: '25pt', lg: '32pt' }}
+                            fontWeight='bold'
+                        >
+                             {Iscode_about.header}
+                        </Flex>
+                        <Flex
+                            fontSize={{ base: '15pt', sm: '16pt', md: '17pt', lg: '18pt' }}
+                        >
+                          {Iscode_about.text}
+                        </Flex>
                     </Flex>
                     <Flex
-                        fontSize={{ base: '15pt', sm: '20pt', md: '25pt', lg: '32pt' }}
-                        fontWeight='bold'
-                        h={'5px'}
-                        w='100px'
-                        bgColor={'white'}
-                        my='10px'
-                    />
-                    <Flex
-                        fontSize={{ base: '15pt', sm: '16pt', md: '17pt', lg: '18pt' }}
+                        w={{ base: '100%', lg: '40%' }}
+                        h='auto'
+                        justifyContent={'center'}
+                        overflow='hidden'
+                        borderRadius={'10px'}
                     >
-                        {Iscode_about.text}
+                        <Image
+                            src="/iscode.png"
+                            w={'100%'}
+                        />
                     </Flex>
                 </Flex>
                 {Iscode_export_data.map((row, id) => (
@@ -89,7 +101,7 @@ export default function IscodeView() {
                                     window.open(row.file)
                                 }}
                                 _hover={{
-                                    color:'red',
+                                    color: 'red',
                                     transition: "1s"
                                 }}
                                 direction='column'
