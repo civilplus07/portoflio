@@ -3,6 +3,7 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import { Flex, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React from "react";
+import { Footer } from "./components/Footer";
 import { useAppLayoutContext } from "./utils/context";
 
 export default function AppLayoutView() {
@@ -74,6 +75,7 @@ export default function AppLayoutView() {
                 setShow(false)
             }}>
                 {children}
+                <Footer />
             </Flex>
         </Flex >
     );
