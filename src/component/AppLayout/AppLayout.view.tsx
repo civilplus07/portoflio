@@ -23,7 +23,7 @@ export default function AppLayoutView() {
                         w='200px'
                         fontSize={{ base: '12pt', sm: '14pt', md: '16pt', lg: '18pt', xl: '20pt' }}
                     >
-                        Civil <span style={{color:'#cc372d'}}>PLUS</span>
+                        Civil <span style={{ color: '#cc372d' }}>PLUS</span>
                     </Flex>
                     <Flex display={{ base: 'none', lg: 'inherit' }}>
                         {items.map((item, id) => (
@@ -38,10 +38,12 @@ export default function AppLayoutView() {
                         m='0 20px'
                         justifyContent={'end'}
                         display={{ base: 'inherit', lg: 'none' }}
-                        cursor='pointer'
-                        onClick={() => setShow(!show)}
                     >
-                        <Flex>
+                        <Flex
+                            justifyContent={'end'}
+                            cursor='pointer'
+                            onClick={() => setShow(!show)}
+                        >
                             <HamburgerIcon />
                         </Flex>
                     </Flex>
@@ -65,7 +67,12 @@ export default function AppLayoutView() {
                     </Flex>
                 </Flex>
             </Flex>
-            {children}
+            <Flex direction={'column'} onClick={(e) => {
+                e.stopPropagation()
+                setShow(false)
+            }}>
+                {children}
+            </Flex>
         </Flex >
     );
 }    

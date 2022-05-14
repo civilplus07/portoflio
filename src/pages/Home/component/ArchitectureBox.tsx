@@ -1,4 +1,4 @@
-import { Flex, Image } from "@chakra-ui/react";
+import { Flex, Image, MenuItemOption, MenuList, MenuOptionGroup } from "@chakra-ui/react";
 
 export default function ArchitectureBox() {
     return (
