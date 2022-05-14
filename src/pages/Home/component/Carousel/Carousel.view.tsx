@@ -15,8 +15,18 @@ export default function CarouselView() {
             <Slider {...settings}>
                 {CarouselImages.map((row, id) => {
                     return (
-                        <Flex key={id} w='100%'>
-                            <Image src={row} w='100%' />
+                        <Flex key={id} w='100%' position={'relative'}>
+                            <Image src={row.image} w='100%' />
+                            <Flex
+                                fontSize={{ base: '9pt', sm: '15pt', md: '25pt', lg: '40pt' }}
+                                position='absolute'
+                                top={'15%'}
+                                left={'7%'}
+                                fontWeight='bold'
+                                color={'white'}
+                            >
+                                {row.text}
+                            </Flex>
                         </Flex>
                     )
                 })}

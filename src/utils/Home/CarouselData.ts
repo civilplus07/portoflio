@@ -1,2 +1,27 @@
-// 1920px × 580px
-export const CarouselImages = ['/construction1.jpeg', '/construction2.jpeg', '/construction3.jpeg', '/construction4.jpeg', '/construction5.jpeg', '/construction6.jpeg', '/construction7.jpeg', '/construction8.jpeg', '/construction9.jpeg', '/construction10.jpeg', '/construction11.jpeg', '/construction12.jpeg']
+// 1920px × 650px
+export const CarouselImages=[
+    {
+        image:'/construction1.jpeg',
+        text:'A Trendy Luxary View.'
+    },
+    {
+        image:'/construction2.jpeg',
+        text:''
+    },
+    {
+        image:'/construction3.jpeg',
+        text:'Crafting Your Curiosity.'
+    },
+    {
+        image:'/construction4.jpeg',
+        text:'Life Full of Simplicity.'
+    },
+    {
+        image:'/construction5.jpeg',
+        text:'Adorning your Outer World.'
+    },
+    {
+        image:'/construction6.jpeg',
+        text:'The Joy of Building Best.'
+    },
+]
