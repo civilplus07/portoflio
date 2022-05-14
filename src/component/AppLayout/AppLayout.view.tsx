@@ -9,7 +9,7 @@ export default function AppLayoutView() {
     const { setShow, show, variants, items, children } = useAppLayoutContext();
     return (
         <Flex direction={'column'}>
-            <Flex direction={'column'} position='sticky' top={'0'} zIndex={99}>
+            <Flex direction={'column'}>
                 <Flex
                     bgColor='white'
                     h='100px'
