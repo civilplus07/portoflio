@@ -15,7 +15,7 @@ export default function CarouselView() {
             <Slider {...settings}>
                 {CarouselImages.map((row, id) => {
                     return (
-                        <Flex key={id} w='100%' h={'auto'}>
+                        <Flex key={id} w='100%'>
                             <Image src={row} w='100%' />
                         </Flex>
                     )
