@@ -19,6 +19,14 @@ function Router() {
                     <Redirect to={"/dashboard"} />
                 </Route>
                 <Route path="/dashboard" component={Home} />
+                {/* <Route path="/iscode" component={Home} />
+                <Route path="/civilengeneering" component={Home} />
+                <Route path="/tenderobligation" component={Home} />
+                <Route path="/importantdocuments" component={Home} />
+                <Route path="/homestudiodrafting" component={Home} />
+                <Route path="/variousexams" component={Home} />
+                <Route path="/aboutus" component={Home} />
+                <Route path="/contactus" component={Home} /> */}
                 <Route path="*" component={NoMatch} />
             </Switch>
         </BrowserRouter>

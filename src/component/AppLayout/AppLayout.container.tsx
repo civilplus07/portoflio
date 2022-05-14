@@ -14,47 +14,47 @@ export default function AppLayoutContainer({ children }: { children: React.React
         {
             title: 'HOME',
             active: false,
-            href: '#home'
+            href: '/dashboard'
         },
         {
             title: 'IS Code',
             active: false,
-            href: '#about'
+            href: '/iscode'
         },
         {
             title: 'Civil Engeneering',
             active: false,
-            href: '#portfolio'
+            href: '/civilengeneering'
         },
         {
             title: 'Tender Obligations',
             active: false,
-            href: '#blog'
+            href: '/tenderobligation'
         },
         {
             title: 'Important documents',
             active: false,
-            href: '#contact'
+            href: '/importantdocuments'
         },
         {
             title: 'House studio drafting',
             active: false,
-            href: '#contact'
+            href: '/homestudiodrafting'
         },
         {
             title: 'Various Exams',
             active: false,
-            href: '#contact'
+            href: '/variousexams'
         },
         {
             title: 'About',
             active: false,
-            href: '#contact'
+            href: '/aboutus'
         },
         {
             title: 'Contact Us',
             active: false,
-            href: '#contact'
+            href: '/contactus'
         },
     ]
     return (

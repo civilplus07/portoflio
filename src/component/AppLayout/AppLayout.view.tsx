@@ -22,6 +22,8 @@ export default function AppLayoutView() {
                         mx={'20px'}
                         w='200px'
                         fontSize={{ base: '12pt', sm: '14pt', md: '16pt', lg: '18pt', xl: '20pt' }}
+                        fontWeight='bold'
+                        letterSpacing={1}
                     >
                         Civil <span style={{ color: '#cc372d' }}>PLUS</span>
                     </Flex>
