@@ -6,6 +6,7 @@ import { useFooterContext } from "./utils/context";
 import { BsDot } from 'react-icons/bs'
 import { GoLocation } from 'react-icons/go'
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
+import axios from "axios";
 
 export default function FooterView() {
     const { count } = useFooterContext();
@@ -104,7 +105,17 @@ export default function FooterView() {
                             </Flex>
                             <Flex alignItems={'center'} gap='20px'>
                                 {footer_social.map((row, id) => (
-                                    <Flex fontSize={{ base: '11pt', sm: '13pt', md: '15pt' }} onClick={() => window.open(row.link)} key={id} color={row.color}>
+                                    <Flex
+                                        fontSize={{ base: '11pt', sm: '13pt', md: '15pt' }}
+                                        cursor='pointer'
+                                        onClick={() => {
+                                            if (row.link = 'whatsapp') {
+                                                axios.get('https://api.whatsapp.com/send?phone=+917665882883')
+                                            }
+                                            else
+                                                window.open(row.link)
+                                        }}
+                                        key={id} color={'white'}>
                                         <row.img />
                                     </Flex>
                                 ))}

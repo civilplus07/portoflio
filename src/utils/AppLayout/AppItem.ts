@@ -84,7 +84,7 @@ export const footer_social = [
     },
     {
         img: IoLogoWhatsapp,
-        link: '',
+        link: 'whatsapp',
         color:'green'
     },
 ]
