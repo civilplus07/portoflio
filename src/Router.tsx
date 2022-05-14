@@ -2,6 +2,7 @@ import { SimpleGrid } from "@chakra-ui/react";
 import * as React from "react";
 import { Redirect, Route, Switch, BrowserRouter } from "react-router-dom";
 import { Home } from "./pages/Home";
+import { Iscode } from "./pages/Iscode";
 
 const NoMatch = () => {
     return (
@@ -19,8 +20,8 @@ function Router() {
                     <Redirect to={"/dashboard"} />
                 </Route>
                 <Route path="/dashboard" component={Home} />
-                {/* <Route path="/iscode" component={Home} />
-                <Route path="/civilengeneering" component={Home} />
+                <Route path="/iscode" component={Iscode} />
+                {/* <Route path="/civilengeneering" component={Home} />
                 <Route path="/tenderobligation" component={Home} />
                 <Route path="/importantdocuments" component={Home} />
                 <Route path="/homestudiodrafting" component={Home} />
