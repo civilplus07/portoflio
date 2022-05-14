@@ -8,9 +8,11 @@ export default function CarouselContainer() {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 100,
+        autoplay:true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        nextButton:null
     };
     return (
         <CarouselContext.Provider

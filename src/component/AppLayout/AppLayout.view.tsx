@@ -69,7 +69,7 @@ export default function AppLayoutView() {
                     </Flex>
                 </Flex>
             </Flex>
-            <Flex direction={'column'} onClick={(e) => {
+            <Flex overflowX={'hidden'} direction={'column'} onClick={(e) => {
                 e.stopPropagation()
                 setShow(false)
             }}>
