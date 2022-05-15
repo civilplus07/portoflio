@@ -1,0 +1,5 @@
+export const about_info = {
+    header: "About Us",
+    text: "We started off as a Structural consultancy firm in Bangalore in 2015. Cofounded by two structural Engineers Premjit  & Susmitha, the consulting firm diversified and now are providing one of the best structural analysis and design  training in the country in terms of its quality, conduct and content. We are pioneers in ETABS online training & Revit online training. The courses focus on all aspects including scheme,analysis,design,hand calculations,detailing and effective use of software.<br/> <br/>These courses are structured  by our founders, keeping in mind the gaps in education. The extensive structural consulting experience they have while working with world class companies like Atkins is included in the courses.We have walked a confident path of success, ethics and independence and take you step by step to success and independence..",
+    img: 'https://static.wixstatic.com/media/nsplsh_80dbb819af404ee7a83f9e0eaa26a813~mv2.jpg/v1/fill/w_894,h_1032,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Image%20by%20Headway.jpg'
+}
