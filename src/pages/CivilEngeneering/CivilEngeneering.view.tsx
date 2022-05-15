@@ -56,6 +56,12 @@ export default function CivilEngeneeringView() {
                         />
                     </Flex>
                 </Flex>
+            </Flex>
+            <Flex
+                p={{ base: '10px', md: '50px' }}
+                columnGap={'10px'}
+                direction={'column'}
+            >
                 <Flex direction={'column'}>
                     <Select placeholder='Select option' value={inputFile} onChange={(e) => setInputFile(e.target.value)} w='500px'>
                         {civil_file.map((row, id) => (

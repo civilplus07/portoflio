@@ -35,8 +35,8 @@ export default function FooterView() {
                 >
                     <GridItem>
                         <Flex direction={'column'} mx='40px'>
-                            <Flex w='200px' mb={'10px'}>
-                                <Image src={footer_info.img} />
+                            <Flex w='200px' mb={'40px'} fontWeight='bold' fontSize={{ base: '15pt', sm: '30pt', md: '32pt' }}>
+                                Civil <span style={{ color: '#cc372d' }}>PLUS</span>
                             </Flex>
                             <Flex
                             >
