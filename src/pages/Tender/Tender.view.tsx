@@ -31,18 +31,35 @@ export default function TenderView() {
                     fontSize={{ base: '15pt', sm: '16pt', md: '17pt', lg: '18pt' }}
                 >Build Today for better tommorow</Text> */}
             </Flex>
-            <Flex>
+            {tender_img.map((row, id) => (
+                <Flex
+                    direction={'column'}
+                    justifyContent='center'
+                    alignItems={'center'}
+                    key={id}
+                    display={{ base: 'inherit', md: 'none' }}
+                >
+                    <Image
+                        src={row}
+                        w={{ base: '90%', md: '80%' }}
+                        h='auto'
+                    />
+                </Flex>
+            ))}
+            <Flex
+                display={{ base: 'none', md: 'inherit' }}
+            >
                 <Flex
                     cursor={'pointer'}
                     onClick={() => {
-                        if ( page > 0 )
+                        if (page > 0)
                             setPage(page - 1)
                     }}
                     color={'white'}
                     justifyContent={'center'}
                     alignItems='center'
                     fontSize={{ base: '15pt', sm: '20pt', md: '25pt', lg: '32pt' }}
-                    display={page==0?'none':'inherit'}
+                    display={page == 0 ? 'none' : 'inherit'}
                 >
                     <GrFormPrevious />
                 </Flex>
@@ -64,7 +81,7 @@ export default function TenderView() {
                     justifyContent={'center'}
                     fontSize={{ base: '15pt', sm: '20pt', md: '25pt', lg: '32pt' }}
                     alignItems='center'
-                    display={page==tender_img.length-1?'none':'inherit'}
+                    display={page == tender_img.length - 1 ? 'none' : 'inherit'}
                 >
                     <GrFormNext />
                 </Flex>
