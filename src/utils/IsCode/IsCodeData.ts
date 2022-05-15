@@ -1,6 +1,7 @@
 export const Iscode_about = {
     header: "IS Code",
-    text: "A large number of Indian Standard (IS) codes are available that are meant for virtually every aspect of civil engineering one can think of. During one's professional life one normally uses only a handful of them depending on the nature of work they are involved in."
+    text: "A large number of Indian Standard (IS) codes are available that are meant for virtually every aspect of civil engineering one can think of. During one's professional life one normally uses only a handful of them depending on the nature of work they are involved in.",
+    img:'/iscode.png'
 }
 
 //<br/>

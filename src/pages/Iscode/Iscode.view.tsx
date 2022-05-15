@@ -33,12 +33,12 @@ export default function IscodeView() {
                             fontSize={{ base: '15pt', sm: '20pt', md: '25pt', lg: '32pt' }}
                             fontWeight='bold'
                         >
-                             {Iscode_about.header}
+                            {Iscode_about.header}
                         </Flex>
                         <Flex
                             fontSize={{ base: '15pt', sm: '16pt', md: '17pt', lg: '18pt' }}
                         >
-                          {Iscode_about.text}
+                            {Iscode_about.text}
                         </Flex>
                     </Flex>
                     <Flex
@@ -49,7 +49,7 @@ export default function IscodeView() {
                         borderRadius={'10px'}
                     >
                         <Image
-                            src="/iscode.png"
+                            src={Iscode_about.img}
                             w={'100%'}
                         />
                     </Flex>

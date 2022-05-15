@@ -3,6 +3,7 @@ import { Flex, Image, Select, Text } from "@chakra-ui/react";
 import React from "react";
 import { FaFileDownload } from "react-icons/fa";
 import { Civil_about, civil_file, civil_file_mapper } from "../../utils/Civil/civilData";
+import CivilBox from "./component/CivilBox";
 import { PdfViewer } from "./component/PdfViewer";
 import { useCivilEngeneeringContext } from "./utils/context";
 
@@ -11,59 +12,14 @@ export default function CivilEngeneeringView() {
     const [inputFile, setInputFile] = React.useState('CE-404_1 Introduction')
     return (
         <>
-            <Flex
-                bgColor={'#ff6666'}
-                p={{ base: '20px', md: '100px' }}
-                color={'white'}
-                columnGap={'10px'}
-                direction={'column'}
-            >
-                <Flex
-                    color={'white'}
-                    direction={{ base: 'column', lg: 'initial' }}
-                    columnGap={'10px'}
-                    rowGap='50px'
-                    mb={'50px'}
-                >
-                    <Flex
-                        w={{ base: '100%', lg: '60%' }}
-                        justifyContent={'center'}
-                        direction='column'
-                        gap='10px'
-                    >
-                        <Flex
-                            fontSize={{ base: '15pt', sm: '20pt', md: '25pt', lg: '32pt' }}
-                            fontWeight='bold'
-                        >
-                            {Civil_about.header}
-                        </Flex>
-                        <Flex
-                            fontSize={{ base: '15pt', sm: '16pt', md: '17pt', lg: '18pt' }}
-                        >
-                            {Civil_about.text}
-                        </Flex>
-                    </Flex>
-                    <Flex
-                        w={{ base: '100%', lg: '40%' }}
-                        h='auto'
-                        justifyContent={'center'}
-                        overflow='hidden'
-                        borderRadius={'10px'}
-                    >
-                        <Image
-                            src="/iscode.png"
-                            w={'100%'}
-                        />
-                    </Flex>
-                </Flex>
-            </Flex>
+            <CivilBox/>
             <Flex
                 p={{ base: '10px', md: '50px' }}
                 columnGap={'10px'}
                 direction={'column'}
             >
                 <Flex direction={'column'}>
-                    <Select placeholder='Select option' value={inputFile} onChange={(e) => setInputFile(e.target.value)} w='500px'>
+                    <Select placeholder='Select option' value={inputFile} onChange={(e) => setInputFile(e.target.value)} w='300px'>
                         {civil_file.map((row, id) => (
                             <option key={id} value={row.title}>{row.title}</option>
                         ))}
