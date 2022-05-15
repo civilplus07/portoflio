@@ -1,8 +1,7 @@
 
 import { Flex, Text, Image } from "@chakra-ui/react";
-import React from "react";
-import { about_info } from "../../utils/About/About_data";
 import AboutBox from "./components/AboutBox";
+import AboutFounder from "./components/AboutFounder";
 import { useAboutUsContext } from "./utils/context";
 
 export default function AboutUsView() {
@@ -31,13 +30,14 @@ export default function AboutUsView() {
                     About
                 </Flex>
                 <Flex
-                    fontSize={{ base: '15pt', sm: '16pt', md: '17pt', lg: '18pt' }}
+                    fontSize={{ base: '10pt', sm: '11pt', md: '12pt', lg: '15pt' }}
                 >
-                    <Flex><a href="/home">Home / </a></Flex>
+                    <Flex><a href="/dashboard">Home / </a></Flex>
                     <Flex pl={'5px'}><a href="aboutus">About </a></Flex>
                 </Flex>
             </Flex>
             <AboutBox />
+            <AboutFounder/>
         </Flex>
     );
 
