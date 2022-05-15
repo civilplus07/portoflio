@@ -26,7 +26,7 @@ export default function AppLayoutView() {
                         fontWeight='bold'
                         letterSpacing={1}
                     >
-                        Civil <span style={{ color: '#cc372d' }}>PLUS</span>
+                        CIVIL <span style={{ color: '#cc372d' }}>Practo</span>
                     </Flex>
                     <Flex display={{ base: 'none', lg: 'inherit' }}>
                         {items.map((item, id) => (

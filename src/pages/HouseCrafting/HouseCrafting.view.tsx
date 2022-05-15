@@ -9,15 +9,25 @@ export default function HouseCraftingView() {
     return (
         <>
             <Flex
-                bgColor={'#cbdff5'}
                 p={{ base: '10px', md: '50px' }}
-                color={'white'}
-                direction={{ base: 'column', lg: 'initial' }}
+                color={'black'}
                 columnGap={'10px'}
                 rowGap='50px'
+                direction={'column'}
             >
+                <Flex
+                    fontSize={{ base: '15pt', sm: '20pt', md: '25pt', lg: '32pt' }}
+                    fontWeight='bold'
+                    justifyContent={'center'}
+                    alignItems='center'
+                    direction='column'
+                >
+                    <Text>  House Designs</Text>
+                    <Text
+                        fontSize={{ base: '15pt', sm: '16pt', md: '17pt', lg: '18pt' }}
+                    >Build Today for better tommorow</Text>
+                </Flex>
                 <Grid
-                    m={{ base: '40px 0 30px 0', sm: '60px 0 35px 0', md: '80px 0 50px 0', lg: '100px 0 70px 0' }}
                     w='100%'
                     templateColumns={{ base: 'repeat(1, 1fr)', sm: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)', xl: 'repeat(3, 1fr)' }}
                     gap={6}
@@ -32,6 +42,13 @@ export default function HouseCraftingView() {
                         </GridItem>
                     ))}
                 </Grid>
+                <Flex
+                    mt={'20px'}
+                    fontSize={{ base: '11pt', sm: '12pt', md: '13pt', lg: '15pt' }}
+                    justifyContent='center'
+                >
+                    CONTACT US FOR MORE INFO...
+                </Flex>
             </Flex>
         </>
     )

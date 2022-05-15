@@ -29,7 +29,7 @@ export const items = [
         href: '/importantdocuments'
     },
     {
-        title: 'House studio drafting',
+        title: 'House Designs',
         active: false,
         href: '/homestudiodrafting'
     },
