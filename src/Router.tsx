@@ -33,7 +33,7 @@ function Router() {
                 <Route path="/iscode" component={Iscode} />
                 <Route path="/civilengeneering" component={CivilEngeneering} />
                 <Route path="/tenderobligation" component={Tender} />
-                <Route path="/practicalcivil" component={PracticalCivil} />
+                {/* <Route path="/practicalcivil" component={PracticalCivil} /> */}
                 <Route path="/homestudiodrafting" component={HouseCrafting} />
                 <Route path="/variousexams" component={VariousExam} />
                 <Route path="/aboutus" component={AboutUs} />

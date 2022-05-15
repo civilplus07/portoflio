@@ -23,11 +23,11 @@ export const items = [
         active: false,
         href: '/tenderobligation'
     },
-    {
-        title: 'practical civil',
-        active: false,
-        href: '/practicalcivil'
-    },
+    // {
+    //     title: 'practical civil',
+    //     active: false,
+    //     href: '/practicalcivil'
+    // },
     {
         title: 'House Designs',
         active: false,
