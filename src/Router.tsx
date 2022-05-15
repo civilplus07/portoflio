@@ -8,6 +8,7 @@ import { ContactUs } from "./pages/ContactUs";
 import { Home } from "./pages/Home";
 import { HouseCrafting } from "./pages/HouseCrafting";
 import { Iscode } from "./pages/Iscode";
+import { Tender } from "./pages/Tender";
 
 const NoMatch = () => {
     return (
@@ -29,7 +30,7 @@ function Router() {
                 <Route path="/dashboard" component={Home} />
                 <Route path="/iscode" component={Iscode} />
                 <Route path="/civilengeneering" component={CivilEngeneering} />
-                {/* <Route path="/tenderobligation" component={Home} /> */}
+                <Route path="/tenderobligation" component={Tender} />
                 {/* <Route path="/importantdocuments" component={Home} /> */}
                 <Route path="/homestudiodrafting" component={HouseCrafting} />
                 {/* <Route path="/variousexams" component={Home} /> */}
