@@ -4,67 +4,67 @@ export const Civil_about = {
 }
 
 export const civil_file_mapper = {
-    "CE-404_1 Introduction": '/CE-404_1 Introduction.pdf',
-    "CE-404_2 Parts of Buildings": '/CE-404_2 Parts of Buildings.pdf',
-    "CE-404_3 Furniture Requirements": '/CE-404_3 Furniture Requirements.pdf',
-    "CE-404_4 Masonry": '/CE-404_4 Masonry.pdf',
-    "CE-404_5 Floors": '/CE-404_5 Floors.pdf',
-    "CE-404_6 Roofs": '/CE-404_6 Roofs.pdf',
-    "CE-404_7 Doors": '/CE-404_7 Doors.pdf',
-    "CE-404_8 Windows": '/CE-404_8 Windows.pdf',
-    "CE-404_9 Damp Proofing": '/CE-404_9 Damp Proofing.pdf',
-    "CE-404_10 Fire Resistance": '/CE-404_10 Fire Resistance.pdf',
-    "CE-404_11 Electrical Installtions": '/CE-404_11 Electrical Installtions.pdf',
-    "CE-404_12 Water Supply Plumbing": '/CE-404_12 Water Supply Plumbing.pdf'
+    "Introduction": '/CE-404_1 Introduction.pdf',
+    "Parts of Buildings": '/CE-404_2 Parts of Buildings.pdf',
+    "Furniture Requirements": '/CE-404_3 Furniture Requirements.pdf',
+    "Masonry": '/CE-404_4 Masonry.pdf',
+    "Floors": '/CE-404_5 Floors.pdf',
+    "Roofs": '/CE-404_6 Roofs.pdf',
+    "Doors": '/CE-404_7 Doors.pdf',
+    "Windows": '/CE-404_8 Windows.pdf',
+    "Damp Proofing": '/CE-404_9 Damp Proofing.pdf',
+    "Fire Resistance": '/CE-404_10 Fire Resistance.pdf',
+    "Electrical Installtions": '/CE-404_11 Electrical Installtions.pdf',
+    "Water Supply Plumbing": '/CE-404_12 Water Supply Plumbing.pdf'
 }
 
 export const civil_file = [
     {
-        title: 'CE-404_1 Introduction',
+        title: 'Introduction',
         file: '/CE-404_1 Introduction.pdf'
     },
     {
-        title: 'CE-404_2 Parts of Buildings',
+        title: 'Buildings',
         file: '/CE-404_2 Parts of Buildings.pdf'
     },
     {
-        title: 'CE-404_3 Furniture Requirements',
+        title: 'Requirements',
         file: '/CE-404_3 Furniture Requirements.pdf'
     },
     {
-        title: 'CE-404_4 Masonry',
+        title: 'Masonry',
         file: '/CE-404_4 Masonry.pdf'
     },
     {
-        title: 'CE-404_5 Floors',
+        title: 'Floors',
         file: '/CE-404_5 Floors.pdf'
     },
     {
-        title: 'CE-404_6 Roofs',
+        title: 'Roofs',
         file: '/CE-404_6 Roofs.pdf'
     },
     {
-        title: 'CE-404_7 Doors',
+        title: 'Doors',
         file: '/CE-404_7 Doors.pdf'
     },
     {
-        title: 'CE-404_8 Windows',
+        title: 'Windows',
         file: '/CE-404_8 Windows.pdf'
     },
     {
-        title: 'CE-404_9 Damp Proofing',
+        title: 'Damp Proofing',
         file: '/CE-404_9 Damp Proofing.pdf'
     },
     {
-        title: 'CE-404_10 Fire Resistance',
+        title: 'Fire Resistance',
         file: '/CE-404_10 Fire Resistance.pdf'
     },
     {
-        title: 'CE-404_11 Electrical Installtions',
+        title: 'Electrical Installtions',
         file: '/CE-404_11 Electrical Installtions.pdf'
     },
     {
-        title: 'CE-404_12 Water Supply Plumbing',
+        title: 'Water Supply Plumbing',
         file: '/CE-404_12 Water Supply Plumbing.pdf'
     }
 ]

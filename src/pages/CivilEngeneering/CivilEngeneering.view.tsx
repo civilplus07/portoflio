@@ -9,7 +9,7 @@ import { useCivilEngeneeringContext } from "./utils/context";
 
 export default function CivilEngeneeringView() {
     const { count } = useCivilEngeneeringContext();
-    const [inputFile, setInputFile] = React.useState('CE-404_1 Introduction')
+    const [inputFile, setInputFile] = React.useState('Introduction')
     return (
         <>
             <CivilBox/>
