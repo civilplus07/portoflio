@@ -1,0 +1,1 @@
+export { default as PracticalCivil } from "./PracticalCivil.container";

@@ -1,0 +1,1 @@
+export { default as VariousExam } from "./VariousExam.container";

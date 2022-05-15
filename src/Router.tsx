@@ -8,7 +8,9 @@ import { ContactUs } from "./pages/ContactUs";
 import { Home } from "./pages/Home";
 import { HouseCrafting } from "./pages/HouseCrafting";
 import { Iscode } from "./pages/Iscode";
+import { PracticalCivil } from "./pages/PracticalCivil";
 import { Tender } from "./pages/Tender";
+import { VariousExam } from "./pages/VariousExam";
 
 const NoMatch = () => {
     return (
@@ -31,9 +33,9 @@ function Router() {
                 <Route path="/iscode" component={Iscode} />
                 <Route path="/civilengeneering" component={CivilEngeneering} />
                 <Route path="/tenderobligation" component={Tender} />
-                {/* <Route path="/importantdocuments" component={Home} /> */}
+                <Route path="/practicalcivil" component={PracticalCivil} />
                 <Route path="/homestudiodrafting" component={HouseCrafting} />
-                {/* <Route path="/variousexams" component={Home} /> */}
+                <Route path="/variousexams" component={VariousExam} />
                 <Route path="/aboutus" component={AboutUs} />
                 <Route path="/contactus" component={ContactUs} />
                 <Route path="*" component={NoMatch} />

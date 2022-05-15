@@ -9,7 +9,7 @@ export const items = [
         href: '/dashboard'
     },
     {
-        title: 'IS Code',
+        title: 'IS Code (Imp. doc.)',
         active: false,
         href: '/iscode'
     },
@@ -24,9 +24,9 @@ export const items = [
         href: '/tenderobligation'
     },
     {
-        title: 'Important documents',
+        title: 'practical civil',
         active: false,
-        href: '/importantdocuments'
+        href: '/practicalcivil'
     },
     {
         title: 'House Designs',

@@ -12,7 +12,7 @@ export default function CivilEngeneeringView() {
     const [inputFile, setInputFile] = React.useState('Introduction')
     return (
         <>
-            <CivilBox/>
+            <CivilBox />
             <Flex
                 p={{ base: '10px', md: '50px' }}
                 columnGap={'10px'}
