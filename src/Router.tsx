@@ -1,6 +1,7 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import * as React from "react";
 import { Redirect, Route, Switch, BrowserRouter } from "react-router-dom";
+import { AppLayout } from "./component/AppLayout";
 import { AboutUs } from "./pages/AboutUs";
 import { CivilEngeneering } from "./pages/CivilEngeneering";
 import { ContactUs } from "./pages/ContactUs";
@@ -9,9 +10,11 @@ import { Iscode } from "./pages/Iscode";
 
 const NoMatch = () => {
     return (
-        <SimpleGrid placeItems="center" w="100vw" h="100vh" bgColor="tt.offwhite">
-            404 - Not Found
-        </SimpleGrid>
+        <AppLayout>
+            <SimpleGrid placeItems="center" w="100vw" h="100vh" bgColor="tt.offwhite">
+                404 - Not Found
+            </SimpleGrid>
+        </AppLayout>
     );
 };
 
