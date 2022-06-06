@@ -5,8 +5,8 @@ export const Civil_about = {
 
 export const civil_file_mapper = {
     "Introduction": '/CE-404_1 Introduction.pdf',
-    "Parts of Buildings": '/CE-404_2 Parts of Buildings.pdf',
-    "Furniture Requirements": '/CE-404_3 Furniture Requirements.pdf',
+    "Buildings": '/CE-404_2 Parts of Buildings.pdf',
+    "Requirements": '/CE-404_3 Furniture Requirements.pdf',
     "Masonry": '/CE-404_4 Masonry.pdf',
     "Floors": '/CE-404_5 Floors.pdf',
     "Roofs": '/CE-404_6 Roofs.pdf',
