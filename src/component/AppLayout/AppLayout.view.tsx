@@ -25,8 +25,11 @@ export default function AppLayoutView() {
                         fontSize={{ base: '12pt', sm: '14pt', md: '16pt', lg: '18pt', xl: '20pt' }}
                         fontWeight='bold'
                         letterSpacing={1}
+                        direction='column'
                     >
-                        CIVIL <span style={{ color: '#cc372d' }}>Practo</span>
+                        <Text>CIVIL <span style={{ color: '#cc372d' }}>Practo</span></Text>
+                        <Text pl={'3px'} fontSize={{ base: '6px', sm: '7px', md: '8px', lg: '9px', xl: '10px' }}
+                        >Built knowledge, Built Tomorrow</Text>
                     </Flex>
                     <Flex display={{ base: 'none', lg: 'inherit' }}>
                         {items.map((item, id) => (
