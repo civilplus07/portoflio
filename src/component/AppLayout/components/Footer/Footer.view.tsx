@@ -63,7 +63,7 @@ export default function FooterView() {
                         </Flex>
                     </GridItem>
 
-                    <GridItem>
+                    {/* <GridItem>
                         <Flex direction={'column'} mx='40px'>
                             <Flex w='200px' mb={'40px'} fontWeight='bold' fontSize={{ base: '11pt', sm: '13pt', md: '15pt' }}>
                                 Address Details
@@ -96,7 +96,7 @@ export default function FooterView() {
                                 </Flex>
                             </Flex>
                         </Flex>
-                    </GridItem>
+                    </GridItem> */}
 
                     <GridItem>
                         <Flex direction={'column'} mx='40px'>

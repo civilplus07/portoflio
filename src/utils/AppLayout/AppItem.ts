@@ -52,7 +52,7 @@ export const items = [
 
 export const footer_info = {
     img: 'https://static.wixstatic.com/media/16b26d_28941cde460640f492f4b67d5daf4e0c~mv2.png/v1/fill/w_331,h_112,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/civilera%20logo%2012.png',
-    text: 'Civilera provides world class training in structural design of buildings.Learn ETABS,SAFE,REVIT, STAAD & Detailing professionally'
+    text: 'You share hand with us, We share knowledge with you.'
 }
 
 export const footer_address = {

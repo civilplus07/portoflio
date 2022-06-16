@@ -29,7 +29,7 @@ export default function AppLayoutView() {
                     >
                         <Text>CIVIL <span style={{ color: '#cc372d' }}>Practo</span></Text>
                         <Text pl={'3px'} fontSize={{ base: '6px', sm: '7px', md: '8px', lg: '9px', xl: '10px' }}
-                        >Built knowledge, Built Tomorrow</Text>
+                        >Built Knowledge, Built Tomorrow</Text>
                     </Flex>
                     <Flex display={{ base: 'none', lg: 'inherit' }}>
                         {items.map((item, id) => (
@@ -64,7 +64,7 @@ export default function AppLayoutView() {
                         bgColor={'#333'}
                         animate={show ? "open" : "closed"}
                         variants={variants}
-                        zIndex={99}
+                        zIndex={199}
                     >
                         {items.map((item, id) => (
                             <Flex key={id} color={item.active ? '#e31b6d' : 'white'} m='20px 20px' cursor={'pointer'} onClick={() => setShow(false)}>
