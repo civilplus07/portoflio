@@ -1,6 +1,6 @@
 export const Civil_about = {
     header: "Civil Engeneering",
-    text: "A large number of Indian Standard (IS) codes are available that are meant for virtually every aspect of civil engineering one can think of. During one's professional life one normally uses only a handful of them depending on the nature of work they are involved in."
+    text: "Civil engineering is a engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewage systems, pipelines, structural components of buildings, and railways.<br/> In Short, Civil engineering is the application of physical and scientific principles for solving the problems of society."
 }
 
 export const civil_file_mapper = {

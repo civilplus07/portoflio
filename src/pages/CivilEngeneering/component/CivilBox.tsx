@@ -33,9 +33,8 @@ export default function CivilBox() {
                     </Flex>
                     <Flex
                         fontSize={{ base: '15pt', sm: '16pt', md: '17pt', lg: '18pt' }}
-                    >
-                        {Civil_about.text}
-                    </Flex>
+                        dangerouslySetInnerHTML={{__html:Civil_about.text}}
+                    />
                 </Flex>
                 <Flex
                     w={{ base: '100%', lg: '40%' }}
