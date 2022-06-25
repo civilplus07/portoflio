@@ -91,7 +91,7 @@ export default function IscodeView() {
                             />
                         </Flex>
                         <Flex
-                            w={{ base: '5%', md: '30%' }}
+                            w={{ base: '50%', md: '30%' }}
                             justifyContent='center'
                             alignItems={'center'}
                         >
@@ -109,12 +109,14 @@ export default function IscodeView() {
                                 alignItems={'center'}
                                 fontSize={{ base: '20pt', sm: '25pt', md: '30pt', lg: '40pt' }}
                             >
+                                <Image
+                                    src={row.img}
+                                    w='80%'
+                                    opacity={'0.5'}
+                                />
+                                <Flex position={'absolute'}>
                                 <FaFileDownload />
-                                <Text
-                                    fontSize={{ base: '11pt', sm: '12pt', md: '13pt', lg: '14pt' }}
-                                >
-                                    PDF
-                                </Text>
+                                </Flex>
                             </Flex>
                         </Flex>
                     </Flex>
