@@ -67,7 +67,10 @@ export default function AppLayoutView() {
                         zIndex={199}
                     >
                         {items.map((item, id) => (
-                            <Flex key={id} color={item.active ? '#e31b6d' : 'white'} m='20px 20px' cursor={'pointer'} onClick={() => setShow(false)}>
+                            <Flex key={id} color={item.active ? '#e31b6d' : 'white'} m='20px 20px' cursor={'pointer'} onClick={() => {
+                                setShow(false)
+                                window.open(item.href,'_self')
+                            }}>
                                 <a href={item.href}>{(item.title + "").toUpperCase()}</a>
                             </Flex>
                         ))}
