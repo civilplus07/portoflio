@@ -30,7 +30,7 @@ export default function VariousExamView() {
                         ( IES, GATE, SSC JE, ISRO... )
                     </Text>
                 </Flex>
-                <Select placeholder='Select option' value={inputFile} onChange={(e) => setInputFile(e.target.value)} w='300px'>
+                <Select bgColor={'white'} color='black' placeholder='Select option' value={inputFile} onChange={(e) => setInputFile(e.target.value)} w='300px'>
                     <option value={'Various Exams'}>Various Exams</option>
                     <option value={'Strategy For Exams'}>Strategy For Exams</option>
                 </Select>
@@ -40,7 +40,7 @@ export default function VariousExamView() {
                     alignItems={'center'}
                     gap='20px'
                 >
-                    {various_img[inputFile].map((row, id) => (
+                    {various_img[inputFile]?.map((row, id) => (
                         <Flex
                             direction={'column'}
                             justifyContent='center'
