@@ -31,8 +31,8 @@ export default function VariousExamView() {
                     </Text>
                 </Flex>
                 <Select bgColor={'white'} color='black' placeholder='Select option' value={inputFile} onChange={(e) => setInputFile(e.target.value)} w='300px'>
-                    <option value={'Various Exams'}>Various Exams</option>
-                    <option value={'Strategy For Exams'}>Strategy For Exams</option>
+                    <option style={{background:'white', color:'black'}} value={'Various Exams'}>Various Exams</option>
+                    <option style={{background:'white', color:'black'}} value={'Strategy For Exams'}>Strategy For Exams</option>
                 </Select>
                 <Flex
                     direction={'column'}
