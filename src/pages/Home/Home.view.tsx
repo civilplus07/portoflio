@@ -12,7 +12,7 @@ export default function HomeView() {
     return (
         <>
             <Carousel />
-            <ArchitectureBox />
+            {/* <ArchitectureBox /> */}
             <Flex
                 bgColor={'rgb(19,28,60)'}
                 p={{ base: '20px', md: '100px' }}
