@@ -26,6 +26,8 @@ export default function AppLayoutView() {
                         fontWeight='bold'
                         letterSpacing={1}
                         direction='column'
+                        onClick={()=>window.open('/dashboard','_self')}
+                        cursor='pointer'
                     >
                         <Flex>
                         <Text>CIVIL</Text><Text color={'#cc372d'}> Practo</Text>
