@@ -44,12 +44,10 @@ export default function CivilEngeneeringView() {
                             alignItems={'center'}
                             fontSize={{ base: '20pt', sm: '25pt', md: '30pt', lg: '40pt' }}
                         >
+                            <Image src={`/civil/${inputFile}.png`} w='80%' opacity={0.5}/>
+                            <Flex position={'absolute'}>
                             <FaFileDownload />
-                            <Text
-                                fontSize={{ base: '11pt', sm: '12pt', md: '13pt', lg: '14pt' }}
-                            >
-                                Download PDF
-                            </Text>
+                            </Flex>
                         </Flex>
                     </Flex>
                 </Flex>

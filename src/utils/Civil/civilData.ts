@@ -21,7 +21,7 @@ export const civil_file_mapper = {
 export const civil_file = [
     {
         title: 'Introduction',
-        file: '/CE-404_1 Introduction.pdf'
+        file: '/CE-404_1 Introduction.pdf',
     },
     {
         title: 'Buildings',

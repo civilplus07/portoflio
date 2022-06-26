@@ -1,6 +1,6 @@
 export const about_info = {
     header: "About Us",
-    text: "CIVILpracto is an best platform which provides authentic, relevent, diversified, practical & field knowledge comprehensively. This platform helps in bridge up the gaps of  your knowledge.<br/><br/> You share hand with us, We share knowledge with you..",
+    text: "CIVILPracto is an best platform which provides authentic, relevent, diversified, practical & field knowledge comprehensively. This platform helps in bridge up the gaps of  your knowledge.<br/><br/> You share hand with us, We share knowledge with you..",
     img: 'https://static.wixstatic.com/media/nsplsh_80dbb819af404ee7a83f9e0eaa26a813~mv2.jpg/v1/fill/w_894,h_1032,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Image%20by%20Headway.jpg'
 }
 
