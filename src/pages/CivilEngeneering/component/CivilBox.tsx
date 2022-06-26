@@ -32,7 +32,7 @@ export default function CivilBox() {
                         {Civil_about.header}
                     </Flex>
                     <Flex
-                        fontSize={{ base: '15pt', sm: '16pt', md: '17pt', lg: '18pt' }}
+                        fontSize={{ base: '13pt', sm: '16pt', md: '17pt', lg: '18pt' }}
                         dangerouslySetInnerHTML={{__html:Civil_about.text}}
                     />
                 </Flex>
