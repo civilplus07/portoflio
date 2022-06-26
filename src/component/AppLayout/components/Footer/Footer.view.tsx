@@ -35,8 +35,13 @@ export default function FooterView() {
                 >
                     <GridItem>
                         <Flex direction={'column'} mx='40px'>
-                            <Flex w='200px' mb={'40px'} fontWeight='bold' fontSize={{ base: '15pt', sm: '30pt', md: '32pt' }}>
-                                CIVIL <span style={{ color: '#cc372d' }}>Practo</span>
+                            <Flex
+                                w='200px'
+                                mb={'40px'}
+                                fontWeight='bold'
+                                fontSize={{ base: '15pt', sm: '30pt', md: '32pt' }}
+                            >
+                                <Text>CIVIL</Text><Text color={'#cc372d'}> Practo</Text>
                             </Flex>
                             <Flex
                             >
@@ -128,7 +133,7 @@ export default function FooterView() {
             <Flex
                 fontSize={{ base: '8pt', sm: '9pt', md: '10pt' }}
             >
-                © 2022 by CivilPRACTO
+                © 2022 by CIVILPracto
             </Flex>
         </Flex>
     )

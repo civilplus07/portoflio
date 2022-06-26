@@ -6,6 +6,6 @@ export const about_info = {
 
 export const about_founder = {
     name: 'Shubham Gupta',
-    text: 'Premjit is a Chartered structural engineer with 20 years of consulting experience in a variety of structures including buildings and underground metros. Before starting his own practice and training, he was working at senior positions in companies like Atkins, Jurong and Total Environment<br/><br/>He has extensive experience in projects based in India, middle east & UK.<br/>Premjit has handled many multi-disciplinary multi office projects and was an early adopter of BIM and Revit in his projects. Always had interest in new software, systems and processes.<br/>Has been extremely passionate about training and divides his time between training and consulting.<br/>He is a member of Institution of Engineers and also a member of Kochi consulting Engineers Association.',
-    img: 'https://static.wixstatic.com/media/16b26d_d7226708623849749d2e9efbedda82a7~mv2.jpg/v1/fill/w_1098,h_1398,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/16b26d_d7226708623849749d2e9efbedda82a7~mv2.jpg'
+    text: 'Shubham Gupta is a civil engineer having experience in variety of structures including buildings and road works. He was alumnus of Navodaya vidyalaya, NIT Jalandhar and IIT Delhi.<br/>And he passionate to spread Learning, Knowledge and Awareness among people through this platform which  helps all in bridge up the gaps of your knowledge. So, educate yourself in your domain which matter in your life and think of how you can make the world a better place for everyone!',
+    img: '/shubham.jpeg'
 }

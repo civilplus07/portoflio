@@ -21,13 +21,15 @@ export default function AppLayoutView() {
                 >
                     <Flex
                         mx={'20px'}
-                        w='200px'
+                        w='350px'
                         fontSize={{ base: '12pt', sm: '14pt', md: '16pt', lg: '18pt', xl: '20pt' }}
                         fontWeight='bold'
                         letterSpacing={1}
                         direction='column'
                     >
-                        <Text>CIVIL <span style={{ color: '#cc372d' }}>Practo</span></Text>
+                        <Flex>
+                        <Text>CIVIL</Text><Text color={'#cc372d'}> Practo</Text>
+                        </Flex>
                         <Text pl={'3px'} fontSize={{ base: '6px', sm: '7px', md: '8px', lg: '9px', xl: '10px' }}
                         >Built Knowledge, Built Tomorrow</Text>
                     </Flex>
@@ -69,7 +71,7 @@ export default function AppLayoutView() {
                         {items.map((item, id) => (
                             <Flex key={id} color={item.active ? '#e31b6d' : 'white'} m='20px 20px' cursor={'pointer'} onClick={() => {
                                 setShow(false)
-                                window.open(item.href,'_self')
+                                window.open(item.href, '_self')
                             }}>
                                 <a href={item.href}>{(item.title + "").toUpperCase()}</a>
                             </Flex>
