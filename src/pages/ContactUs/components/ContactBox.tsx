@@ -1,16 +1,22 @@
 import { Flex, Input, Textarea } from "@chakra-ui/react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
+import { successHandler } from "../../../component/SuccessHandler";
 
 export default function ContactBox() {
     const form = useRef();
+    const [isLoading, setLoading] = useState(false)
     const onSubmit = (e) => {
+        setLoading(true)
         e.preventDefault();
         emailjs.sendForm('service_4tji3pe', 'template_4fcit6j', form.current, 'Pu33DEYDzzR2WCMrc')
             .then((result) => {
-                console.log(result.text);
+                successHandler("Your message have been sent successfully")
+                setLoading(false)
             }, (error) => {
                 console.log(error.text);
+                setLoading(false)
+
             });
     }
     return (
@@ -26,7 +32,7 @@ export default function ContactBox() {
                     fontSize={{ base: '15pt', sm: '20pt', md: '25pt', lg: '32pt' }}
                     fontWeight='bold'
                 >
-                   GET IN TOUCH
+                    GET IN TOUCH
                 </Flex>
                 <form ref={form} onSubmit={onSubmit}>
                     <Flex
@@ -66,7 +72,7 @@ export default function ContactBox() {
                                 transition: '0.2s ease-in'
                             }}
                             border={'2px solid white'}
-                            justifyContent='center' type={'submit'} value='SUBMIT' cursor={'pointer'}
+                            justifyContent='center' type={'submit'} value={isLoading ? "Sending..." : 'SUBMIT'} cursor={'pointer'}
                         />
                     </Flex>
                 </form>
